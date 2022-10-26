@@ -73,3 +73,9 @@ body {
     color: rgb(144, 144, 144);
     
 }
+
+@media (min-width: 30px) and (max-width: 480px){
+    .form{
+        width: 320px;
+    }
+}
