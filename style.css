@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding-top: 40px;
+    font-size: 2rem;
+    color: #000;
+}
+
+.fa-clipboard-list{
+    color: blueviolet;
+}
+
+body {
+    background: #FFF7E9;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    position: absolute;
+    top: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    background: #CDFCF6;
+    border-radius: 10px;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    position: relative;
+}
+
+.list li .fa-trash-can {
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li .fa-square-check {
+    color: green;
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.list li.checked{
+    color: rgb(144, 144, 144);
+}
+
+.list li.checked .fa-square-check{
+    color: rgb(144, 144, 144);
+    
+}
