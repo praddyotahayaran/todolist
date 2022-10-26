@@ -1,16 +1,17 @@
 const formEl = document.querySelector(".form");
-const inputEl = document.querySelector(".input");
-const ulEl = document.querySelector(".list");
-let list = JSON.parse(localStorage.getItem("list"));
-let task = undefined;
 
-list.forEach(task=>{
-    todoList(task);
-})
+const inputEl = document.querySelector(".input");
+
+const ulEl = document.querySelector(".list");
+
+let list = JSON.parse(localStorage.getItem("list"));
+
+
+
 
 formEl.addEventListener("submit", (event) => {
     event.preventDefault();
-    todoList()
+    todoList();
 })
 
 function todoList(task) {
@@ -20,7 +21,7 @@ function todoList(task) {
     }
 
     
-    const liEl = document.createElement("li")
+    const liEl = document.createElement("li");
     if (task && task.checked) {
         liEl.classList.add("checked")
     }
