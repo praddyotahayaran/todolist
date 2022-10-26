@@ -7,7 +7,7 @@ const ulEl = document.querySelector(".list");
 let list = JSON.parse(localStorage.getItem("list"));
 
 list.forEach(task =>{
-    toDoList(task)
+    todoList(task)
 })
 
 formEl.addEventListener("submit", (event) => {
